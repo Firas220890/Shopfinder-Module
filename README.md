@@ -32,8 +32,13 @@ Once the installation of the module is done by following one of the above method
 After the above compilation, setup upgrade and deployment is done successfully you may now be able to view the below in our Magento project. 
 
 ->In database you can find a custom table named **"shops_data"**
+Reference image: https://ibb.co/wQD3bLb
+
 ->A section in Magento admin panel under Content->Elements named **"Shopfinder"**
+Reference image: https://ibb.co/y8j0mP8
+
 ->Once you select the **Shopfinder** you can see a grid view where all the shops will be listed and buttons to **add a new shop**, **edit/delete existing shops**.
+https://ibb.co/Kyts6ny
 
 #GraphQL Explanation:
 
