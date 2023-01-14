@@ -43,6 +43,8 @@ a) Update shop information by passing the unique identifier which is shop id
 b) Display all the available shops within the system
 c) Display information for specific shop by passing the shop id
 
+**GrapghQL Endpoint:** http://magento2.local/graphql 
+
 ->Graphql mutation is developed to update existing shops data by passing the unique identifier which is the entity_id
 **Graphql usage:**
 
