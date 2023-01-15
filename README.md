@@ -30,9 +30,13 @@ desired stability.**
 `composer config minimum-stability dev`
 `composer config prefer-stable true`
 
-Once above composer setting are done, run `composer require firas/shopfinder` again. Now you can see that the package will be installed successfully in vendor folder of the magento directory.
+Once above composer settings are done, run `composer require firas/shopfinder` again. Now you can see that the package will be installed successfully in vendor folder of the magento directory.
+
+Check the status of the module just installed by running `bin/magento module:status`, if the module Firas_Shopfinder is disabled kindly enable it by running `bin/magento module:enable Firas_Shopfinder`
 
 Run `sh deploy.sh` from the terminal
+
+You can now start exploring the module by logging into the Admin panel.
 
 ## Manual Installation
 
