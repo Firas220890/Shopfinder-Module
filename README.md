@@ -48,7 +48,9 @@ Once the installation of the module is done by following one of the above method
 
 `sh deploy.sh`
 
-After the above compilation, setup upgrade and deployment is done successfully you may now be able to view the below in our Magento project. 
+##After installation
+
+Once the package installation is completed by following one of the above listed methods you may note the below points and verify the package.
 
 ->In database you can find a custom table named **"shops_data"**
 Reference image: https://ibb.co/wQD3bLb
