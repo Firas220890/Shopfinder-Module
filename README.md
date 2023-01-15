@@ -17,7 +17,11 @@ There are two ways to install this module which are listed below:
 
 ## Composer Installation - recommended way
 
-Specify the version of the module you need, and go.
+Run the below composer require command to install the package
+
+`composer require firas/shopfinder`
+
+You can also find the package information here https://packagist.org/packages/firas/shopfinder
 
 ## Manual Installation
 
