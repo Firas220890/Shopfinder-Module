@@ -125,7 +125,8 @@ That is it! I hope you guys had fun installing this module and executing it. I a
     2) You can see list of all shop and a button to edit the shop data. Click on it and update the information you would like to change and save
 
 **Steps to test using GraphQL:**
-1)Update shop data by passing the id - assuming the shop with id 1 already exist
+
+1) Update shop data by passing the id - assuming the shop with id 1 already exist
     ` mutation {
         shopData(input: {
         shop_id: "1",
@@ -137,7 +138,7 @@ That is it! I hope you guys had fun installing this module and executing it. I a
         success
         }
     }`
-2)View all the shops - By executing the below query it will return all the shops that exist in the system
+2) View all the shops - By executing the below query it will return all the shops that exist in the system
     `{
         getShopsList {
         country
@@ -146,7 +147,7 @@ That is it! I hope you guys had fun installing this module and executing it. I a
         title
         }
     }`
-3)View specific store by passing the id - assuming the store with id 1 already exist
+3) View specific store by passing the id - assuming the store with id 1 already exist
     `{
         view_shop_by_id(shop_id: 1) {
         country
