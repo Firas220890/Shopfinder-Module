@@ -48,7 +48,7 @@ Once the installation of the module is done by following one of the above method
 
 `sh deploy.sh`
 
-##After installation
+## After installation
 
 Once the package installation is completed by following one of the above listed methods you may note the below points and verify the package.
 
