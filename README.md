@@ -61,7 +61,7 @@ Reference image: https://ibb.co/y8j0mP8
 ->Once you select the **Shopfinder** you can see a grid view where all the shops will be listed and buttons to **add a new shop**, **edit/delete existing shops**.
 https://ibb.co/Kyts6ny
 
-#GraphQL Explanation:
+## GraphQL Explanation:
 
 As described earlier Graphql for this module is developed to perform below operations:
 
