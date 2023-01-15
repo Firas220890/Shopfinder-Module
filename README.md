@@ -112,6 +112,50 @@ c) Display information for specific shop by passing the shop id
 
 That is it! I hope you guys had fun installing this module and executing it. I am always open to feedback and learning. Any feedback will be highly appreciated :)
 
+# Unit/Functional Testing steps:
+
+**Steps to test admin section:**
+
+1) Create new shop
+    1) Log into admin panel using the credentials shared above
+    2) Navigate to Content->Elements->Shopfinder
+    3) Click on Add new shop - Add all the required information and submit. Shop data will be added successfully
+2) Edit shop data:
+    1) Navigate to Content->Elements->Shopfinder
+    2) You can see list of all shop and a button to edit the shop data. Click on it and update the information you would like to change and save
+
+**Steps to test using GraphQL:**
+1)Update shop data by passing the id - assuming the shop with id 1 already exist
+    ` mutation {
+        shopData(input: {
+        shop_id: "1",
+        shop_name: "Test Shop",
+        country_code: "AE",
+        base64_encoded_file: "base64encodedimagestring"
+        }) {
+        message
+        success
+        }
+    }`
+2)View all the shops - By executing the below query it will return all the shops that exist in the system
+    `{
+        getShopsList {
+        country
+        entity_id
+        image
+        title
+        }
+    }`
+3)View specific store by passing the id - assuming the store with id 1 already exist
+    `{
+        view_shop_by_id(shop_id: 1) {
+        country
+        entity_id
+        image
+        title
+        }
+    }`
+
 Thank you,
 Firas,
 Senior Magento Full-Stack Developer.
