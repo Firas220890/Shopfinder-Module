@@ -23,6 +23,17 @@ Run the below composer require command to install the package
 
 You can also find the package information here https://packagist.org/packages/firas/shopfinder
 
+**Note:** You may encounter below error when you run the above **composer require firas/shopfinder** to fix the error please run below commands.
+**Error message: Could not find a version of package firas/shopfinder matching your minimum-stability (stable). Require it with an explicit version constraint allowing its   
+desired stability.**
+
+`composer config minimum-stability dev`
+`composer config prefer-stable true`
+
+Once above composer setting are done, run `composer require firas/shopfinder` again. Now you can see that the package will be installed successfully in vendor folder of the magento directory.
+
+Run `sh deploy.sh` from the terminal
+
 ## Manual Installation
 
 The module can be installed manually as well by git cloning the repository to directory /app/code/
