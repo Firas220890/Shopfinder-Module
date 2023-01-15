@@ -1,0 +1,27 @@
+{
+    "name": "firas/shopfinder",
+    "description": "Shopfinder Module to add new shops, view, edit and delete a shop from admin section. GraphQL to update & view shop data",
+    "require": {
+        "php": "~5.5.0|~5.6.0|~7.0.0|7.1.*|7.2.*"
+    },
+    "type": "magento2-module",
+    "version": "1.0.1",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "authors":[
+        {
+            "name": "Firas",
+             "email": "firasath90@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Firas\\Shopfinder\\": ""
+        }
+    }
+}

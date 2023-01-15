@@ -1,0 +1,47 @@
+type Mutation {
+    shopData(input: shopDataInput!): shopDataOutput @resolver(class: "\\Firas\\Shopfinder\\Model\\Resolver\\ShopInput") @doc(description:"Please enter the shop details to update")
+}
+
+input shopDataInput {
+    shop_id: String @doc(description: "Unique shop id")
+    shop_name: String @doc(description: "Name of the shop")
+    country_code: String @doc(description: "ISO Two digit country code")
+    base64_encoded_file: String! @doc(description:"The  base64 code format's file")
+}
+
+type shopDataOutput {
+   success: Boolean,
+   message: String
+}
+
+type Query {
+    view_shop_by_id(
+    shop_id: Int! @doc(description: "Specify the shop id.")
+    ): shopData @resolver( class: "Firas\\Shopfinder\\Model\\Resolver\\ShopData") @doc(description: "Get shop data by shop id.")
+
+    getShopsList: [shopslist] @resolver(class: "Firas\\Shopfinder\\Model\\Resolver\\ShopsList") @doc(description: "Get list of all shops.")
+}
+
+type shopData {
+
+    entity_id: String
+
+    title: String
+
+    country: String
+
+    image: String
+
+}
+
+type shopslist {
+
+    entity_id: String
+
+    title: String
+
+    country: String
+
+    image: String
+
+}
