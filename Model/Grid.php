@@ -82,7 +82,7 @@ class Grid extends \Magento\Framework\Model\AbstractModel implements GridInterfa
     }
 
     /**
-     * Set Content.
+     * Set Country.
      */
     public function setCountry($country)
     {
@@ -90,21 +90,21 @@ class Grid extends \Magento\Framework\Model\AbstractModel implements GridInterfa
     }
 
     /**
-     * Get PublishDate.
+     * Get Image.
      *
      * @return varchar
      */
     public function getImage()
     {
-        return $this->getData(self::PUBLISH_DATE);
+        return $this->getData(self::IMAGE);
     }
 
     /**
-     * Set PublishDate.
+     * Set Image.
      */
-    public function setImage($publishDate)
+    public function setImage($image)
     {
-        return $this->setData(self::PUBLISH_DATE, $publishDate);
+        return $this->setData(self::IMAGE, $image);
     }
 
     /**
