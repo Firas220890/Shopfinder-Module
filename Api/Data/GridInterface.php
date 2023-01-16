@@ -14,7 +14,7 @@ interface GridInterface
      */
     const ENTITY_ID = 'entity_id';
     const TITLE = 'title';
-    const CONTENT = 'country';
+    const COUNTRY = 'country';
     const IMAGE = 'image';
     const IS_ACTIVE = 'is_active';
     const UPDATE_TIME = 'update_time';
@@ -45,14 +45,14 @@ interface GridInterface
     public function setTitle($title);
 
    /**
-    * Get Content.
+    * Get Country.
     *
     * @return varchar
     */
     public function getCountry();
 
    /**
-    * Set Content.
+    * Set Country.
     */
     public function setCountry($country);
 
