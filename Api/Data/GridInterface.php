@@ -15,7 +15,7 @@ interface GridInterface
     const ENTITY_ID = 'entity_id';
     const TITLE = 'title';
     const CONTENT = 'country';
-    const PUBLISH_DATE = 'image';
+    const IMAGE = 'image';
     const IS_ACTIVE = 'is_active';
     const UPDATE_TIME = 'update_time';
     const CREATED_AT = 'created_at';
@@ -57,16 +57,16 @@ interface GridInterface
     public function setCountry($country);
 
    /**
-    * Get Publish Date.
+    * Get Image.
     *
     * @return varchar
     */
     public function getImage();
 
    /**
-    * Set PublishDate.
+    * Set Image.
     */
-    public function setImage($publishDate);
+    public function setImage($image);
 
    /**
     * Get IsActive.
