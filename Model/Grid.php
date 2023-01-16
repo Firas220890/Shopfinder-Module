@@ -78,7 +78,7 @@ class Grid extends \Magento\Framework\Model\AbstractModel implements GridInterfa
      */
     public function getCountry()
     {
-        return $this->getData(self::CONTENT);
+        return $this->getData(self::COUNTRY);
     }
 
     /**
@@ -86,7 +86,7 @@ class Grid extends \Magento\Framework\Model\AbstractModel implements GridInterfa
      */
     public function setCountry($country)
     {
-        return $this->setData(self::CONTENT, $country);
+        return $this->setData(self::COUNTRY, $country);
     }
 
     /**
