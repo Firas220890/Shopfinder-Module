@@ -69,46 +69,46 @@ a) Update shop information by passing the unique identifier which is shop id
 b) Display all the available shops within the system
 c) Display information for specific shop by passing the shop id
 
-**GrapghQL Endpoint:** http://magento2.local/graphql 
+**GrapghQL Endpoint:** http://magento2.local/graphql
 
 ->Graphql mutation is developed to update existing shops data by passing the unique identifier which is the entity_id
 **Graphql usage:**
 
-  ` mutation {
-    shopData(input: {
-      shop_id: "string",
-      shop_name: "string",
-      country_code: "ISO Two digit country code",
-      base64_encoded_file: "string"
-      }) {
-     message
-     success
-    }
-  }`
+` mutation {
+shopData(input: {
+shop_id: "string",
+shop_name: "string",
+country_code: "ISO Two digit country code",
+base64_encoded_file: "string"
+}) {
+message
+success
+}
+}`
 
-->Graphql query is developed to display all the shops existing in the system. 
+->Graphql query is developed to display all the shops existing in the system.
 **GraphQL Usage:**
 
-  `{
-    getShopsList {
-      country
-      entity_id
-      image
-      title
-    }
-  }`
+`{
+getShopsList {
+country
+entity_id
+image
+title
+}
+}`
 
 ->GraphQL query is developed to display the shop by passing the unique identifier which is entity_id
 **GraphQL usage:**
 
-  `{
-    view_shop_by_id(shop_id: int) {
-      country
-      entity_id
-      image
-      title
-    }
-  }`
+`{
+view_shop_by_id(shop_id: int) {
+country
+entity_id
+image
+title
+}
+}`
 
 That is it! I hope you guys had fun installing this module and executing it. I am always open to feedback and learning. Any feedback will be highly appreciated :)
 
@@ -127,35 +127,35 @@ That is it! I hope you guys had fun installing this module and executing it. I a
 **Steps to test using GraphQL:**
 
 1) Update shop data by passing the id - assuming the shop with id 1 already exist
-    ` mutation {
-        shopData(input: {
-        shop_id: "1",
-        shop_name: "Test Shop",
-        country_code: "AE",
-        base64_encoded_file: "base64encodedimagestring"
-        }) {
-        message
-        success
-        }
-    }`
+   ` mutation {
+   shopData(input: {
+   shop_id: "1",
+   shop_name: "Test Shop",
+   country_code: "AE",
+   base64_encoded_file: "base64encodedimagestring" //link to get base64 for image https://elmah.io/tools/base64-image-encoder/
+   }) {
+   message
+   success
+   }
+   }`
 2) View all the shops - By executing the below query it will return all the shops that exist in the system
-    `{
-        getShopsList {
-        country
-        entity_id
-        image
-        title
-        }
-    }`
+   `{
+   getShopsList {
+   country
+   entity_id
+   image
+   title
+   }
+   }`
 3) View specific store by passing the id - assuming the store with id 1 already exist
-    `{
-        view_shop_by_id(shop_id: 1) {
-        country
-        entity_id
-        image
-        title
-        }
-    }`
+   `{
+   view_shop_by_id(shop_id: 1) {
+   country
+   entity_id
+   image
+   title
+   }
+   }`
 
 Thank you,
 Firas,
