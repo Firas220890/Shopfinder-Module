@@ -4,12 +4,9 @@
         <resources>
             <resource id="Magento_Backend::admin">
                 <resource id="Firas_Shopfinder::add_row" title="Shopfinder" sortOrder="51">
-                </resource>
-                <resource id="Firas_Shopfinder::grid_list" title="Shopfinder" sortOrder="51">
-                </resource>
-                <resource id="Firas_Shopfinder::row_data_delete" title="Shopfinder" sortOrder="51">
-                </resource>
-                <resource id="Firas_Shopfinder::save" title="Shopfinder" sortOrder="51">
+                    <resource id="Firas_Shopfinder::grid_list" title="Shops List" sortOrder="51"/>
+                    <resource id="Firas_Shopfinder::row_data_delete" title="Delete Shop" sortOrder="51"/>
+                    <resource id="Firas_Shopfinder::save" title="Save Shop" sortOrder="51"/>
                 </resource>
             </resource>
         </resources>
