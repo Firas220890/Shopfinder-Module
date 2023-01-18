@@ -35,7 +35,7 @@ class Thumbnail extends \Magento\Ui\Component\Listing\Columns\Column {
             $fieldName = $this->getData('name');
             foreach ($dataSource['data']['items'] as &$item) {
                 if ($item['image']) {
-                    $imageUrl = $this->urlBuilder->getBaseUrl().'pub/media/'. $item['image'];
+                    $imageUrl = $this->urlBuilder->getBaseUrl().'media/'. $item['image'];
                     $item[$fieldName . '_src'] = $imageUrl;
                     $item[$fieldName . '_alt'] = $item['image'];
                     $item[$fieldName . '_link'] = $this->urlBuilder->getUrl(
