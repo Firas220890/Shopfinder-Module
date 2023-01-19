@@ -44,9 +44,12 @@ The module can be installed manually as well by git cloning the repository to di
 
 **Repo link:** `https://github.com/Firas220890/Shopfinder-Module.git`
 
-Once the installation of the module is done by following one of the above methods, run the below command to compile the Module from the magento root directory.
+Once the installation of the module is done by following one of the above methods, run the below command to setup upgrade and clear cache from the magento root directory.
 
-`sh deploy.sh`
+`bin/magento setup:upgrade
+bin/magento c:f;
+bin/magento c:c;
+`
 
 ## After installation
 
