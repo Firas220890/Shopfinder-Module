@@ -34,7 +34,12 @@ Once above composer settings are done, run `composer require firas/shopfinder` a
 
 Check the status of the module just installed by running `bin/magento module:status`, if the module Firas_Shopfinder is disabled kindly enable it by running `bin/magento module:enable Firas_Shopfinder`
 
-Run `sh deploy.sh` from the terminal
+Once the installation of the module is done by following one of the above methods, run the below command to setup upgrade and clear cache from the magento root directory.
+
+`bin/magento setup:upgrade
+bin/magento c:f;
+bin/magento c:c;
+`
 
 You can now start exploring the module by logging into the Admin panel.
 
